@@ -16,7 +16,7 @@ function App() {
 // let Navigate = useNavigate();
 
 
-  const input_Values = {username:"", email:"", password:""}
+  const input_Values = {username:"inder", email:"inder@gmail.com", password:"inder123"}
   const [formValues, setFormValues]= useState(input_Values)
   const [formError, setFormError] = useState({})
   const [isLoading, setIsloading] = useState(false)
@@ -115,7 +115,7 @@ else{
         <Route path="/logout" element={<Logout/>}/>
       </Routes>
       </BrowserRouter>
-      {/* <form onSubmit={userLogin}>
+      <form onSubmit={userLogin}>
 
       <label>name:</label>
       <input type="text" value={formValues.username} name="username" onChange={handleValues}/>
@@ -149,7 +149,7 @@ else{
 
 <SelectDelete totalUserData={userData} inputFun={getinputObject}/>
 
-</div> */}
+</div>
 
 
     </div>
